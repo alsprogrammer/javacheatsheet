@@ -1,5 +1,3 @@
-$ curl cheat.sh/
-
 // Single-line comments start with //
 
 /*
@@ -850,13 +848,19 @@ public interface Runnable {
 // And here we are creating the instance of the class we inherite from Runnable interface:
 Runnable r = new Runnable() {
     public void run() {
-        System.out.println("Hooray!")
+        System.out.println("Hooray!");
     }
 }
 
 // Or we can use it in a different manner:
 Thread t = new Thread(new Runnable() {
     public void run() {
-        System.out.println("We can create anonymous class just in place!")
+        System.out.println("We can create anonymous class just in place!");
     }
 })
+
+// Functional interface - an interface that includes only one method that will be called.
+// Can't be inherited from nother one
+public interface Predicate<T> {
+    boolean test(T t);
+}
