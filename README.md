@@ -44,3 +44,32 @@ Note that *-DartifactId=java-quickstart* sets the folder name for your project.
 
 It would create a simple command-line application that does nothing but printing
 'Hello, world!'.
+
+### Making the code compileable runnable
+
+As we use Java8, we have to tell the maven about that specific version. To do that, let's add some special section into our *pom.xml*:
+
+    <properties>
+      <maven.compiler.target>1.8</maven.compiler.target>
+      <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
+This tells the maven we are going to use Java8.
+
+However, if we try to build (or, strictly speaking, *package* the *.jar* file), we won't get a single *.jar* file that includes all we need to start the application. To do that we need to add another section to the *pom.xml* file:
+
+    <build>
+      <plugins>
+        <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>3.1.1</version>
+          <configuration>
+            <descriptorRefs>
+              <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+
+After that, we can package our system and, if there are no errors, we would get a single *.jar* file in the *target* directory that would be named as it is set in *-DartifactId* option.
