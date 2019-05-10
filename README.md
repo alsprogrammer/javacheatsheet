@@ -85,3 +85,18 @@ To make the *target* directory "invisible" for your repository, let us put the l
 to the file.
 
 It will let you exclude the whole directory from your repository.
+
+### How to run
+
+To run the compiled file you can use command
+
+    java -jar target/{artifact-id}-1.0-SNAPSHOT.jar
+
+If you have a few class that cn be run, you have to choose, perfirming the command
+
+    java -cp target/{artifact-id}-1.0-SNAPSHOT.jar {fully qualified class name to run}
+
+for example
+
+    java -cp target/java-quickstart-1.0-SNAPSHOT.jar org.asaiapin.quickstart.App
+
