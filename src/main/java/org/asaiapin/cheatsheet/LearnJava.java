@@ -1,3 +1,6 @@
+// You have to set the name of the package in the class file
+package org.asaiapin.cheatsheet;
+
 // Single-line comments start with //
 
 /*
@@ -723,8 +726,7 @@ public abstract class Animal
     }
 }
 
-class Dog extends Animal
-{
+class Dog extends Animal {
     // Note still have to override the abstract methods in the
     // abstract class.
     @Override

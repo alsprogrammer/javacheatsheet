@@ -12,6 +12,10 @@ place (at least for me) to take a look before start looking somewhere else.
 
 In anyone except me finds it useful, you can use it for your own needs too ;)
 
+## Credits
+
+This all is based on [Programmers cheatsheet, or "We will google for you"](https://habr.com/ru/post/420741/) article or, to be more precise, on the [link](https://cht.sh/java/:learn).
+
 ## Prerequisites
 
 I suppose I'm going to use Java8 (if I migrate to a newer version I make some

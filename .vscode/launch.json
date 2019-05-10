@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "org.asaiapin.cheatsheet.App",
+            "projectName": "javacheatsheet"
+        }
+    ]
+}
