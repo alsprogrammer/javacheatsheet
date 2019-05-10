@@ -76,6 +76,12 @@ After that, we can package our system and, if there are no errors, we would get 
 
 ### Why bring the unneccessary files with you?
 
-Defenitely you do not want to put the executables into the versioning system (for a lot of good reasons), so let's put a *.gitignore* file into the *target* directory.
+Defenitely you do not want to put the executables into the versioning system (for a lot of good reasons), so let's put a *.gitignore* file into the root directory of your repository.
+
+To make the *target* directory "invisible" for your repository, let us put the line
+
+    target/
+
+to the file.
 
 It will let you exclude the whole directory from your repository.
