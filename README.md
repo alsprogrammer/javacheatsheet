@@ -73,3 +73,9 @@ However, if we try to build (or, strictly speaking, *package* the *.jar* file), 
     </build>
 
 After that, we can package our system and, if there are no errors, we would get a single *.jar* file in the *target* directory that would be named as it is set in *-DartifactId* option.
+
+### Why bring the unneccessary files with you?
+
+Defenitely you do not want to put the executables into the versioning system (for a lot of good reasons), so let's put a *.gitignore* file into the *target* directory.
+
+It will let you exclude the whole directory from your repository.
