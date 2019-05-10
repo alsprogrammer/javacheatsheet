@@ -1,6 +1,3 @@
-// You have to set the name of the package in the class file
-package org.asaiapin.cheatsheet;
-
 // Single-line comments start with //
 
 /*
