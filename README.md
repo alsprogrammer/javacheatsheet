@@ -86,6 +86,25 @@ to the file.
 
 It will let you exclude the whole directory from your repository.
 
+### What about Lombok?
+
+Lombok is a good framework which makes Java as convenient as Kotlin (well... almost as convenient as :)
+
+So if you are going to make Lombok and Micronaut (which is a good framework too) friends, you need to add the Lombok annotation processor to annotation processor paths just like this:
+
+    <annotationProcessorPaths>
+      <path>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.0</version>
+      </path>
+      <path>
+        <groupId>io.micronaut</groupId>
+        <artifactId>inject-java</artifactId>
+        <version>${micronaut.version}</version>
+      </path>
+    </annotationProcessorPaths>
+
 ### How to run
 
 To run the compiled file you can use command
