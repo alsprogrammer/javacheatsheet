@@ -45,7 +45,7 @@ Note that *-DartifactId=java-quickstart* sets the folder name for your project.
 It would create a simple command-line application that does nothing but printing
 'Hello, world!'.
 
-### Making the code compileable runnable
+### Making the code compilable and runnable
 
 As we use Java8, we have to tell the maven about that specific version. To do that, let's add some special section into our *pom.xml*:
 
@@ -104,6 +104,12 @@ So if you are going to make Lombok and Micronaut (which is a good framework too)
         <version>${micronaut.version}</version>
       </path>
     </annotationProcessorPaths>
+    
+### Additional files
+
+Imagine you need a text (or any other) file for you tests only. For me it was an sql file for [MariaBD4j](https://github.com/vorburger/MariaDB4j).
+
+Just create the directory *resources* in the *src/test* directory, and then create the file you need there. That's all! The file woill be avialable in you calsspath.
 
 ### How to run
 
