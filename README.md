@@ -68,6 +68,15 @@ However, if we try to build (or, strictly speaking, *package* the *.jar* file), 
               <descriptorRef>jar-with-dependencies</descriptorRef>
             </descriptorRefs>
           </configuration>
+          <executions>
+            <execution>
+              <id>make-assembly</id> <!-- this is used for inheritance merges -->
+              <phase>package</phase> <!-- bind to the packaging phase -->
+              <goals>
+                <goal>single</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </build>
