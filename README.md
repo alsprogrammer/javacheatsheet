@@ -52,9 +52,16 @@ As we use Java8, we have to tell the maven about that specific version. To do th
     <properties>
       <maven.compiler.target>1.8</maven.compiler.target>
       <maven.compiler.source>1.8</maven.compiler.source>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 This tells the maven we are going to use Java8.
+
+The 
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    
+line tells maven to consider the source UTF-8 encoded to avoid the warnings about the encoding.
 
 However, if we try to build (or, strictly speaking, *package* the *.jar* file), we won't get a single *.jar* file that includes all we need to start the application. To do that we need to add another section to the *pom.xml* file:
 
